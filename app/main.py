@@ -9,4 +9,3 @@ def root():
 @app.get("/health")
 def health():
     return {"status": "ok"}
-return {"message": "API funcionando v2"}
