@@ -24,7 +24,9 @@ jobs:
         pip install pytest
 
     - name: Run tests
-      run: pytest
+      run: |
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
+        pytest
 
     - name: Build Docker image
       run: docker build -t tfg-devsecops .
