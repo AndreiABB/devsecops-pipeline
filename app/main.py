@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="TFG DevSecOps API")
+app = FastAPI(title="DevSecOps API")
 
 @app.get("/")
 def root():
