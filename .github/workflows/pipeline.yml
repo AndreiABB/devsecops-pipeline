@@ -29,12 +29,12 @@ jobs:
         pytest
 
     - name: Build Docker image
-      run: docker build -t tfg-devsecops .
+      run: docker build -t devsecops .
 
     - name: Trivy security scan
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: tfg-devsecops
+        image-ref: devsecops
         format: table
         exit-code: 0
 
